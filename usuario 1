@@ -1,0 +1,163 @@
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1
+$ git init
+Initialized empty Git repository in C:/Users/HP/Desktop/ususario1/.git/
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git add .
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   book/1-introduccion.pdf
+        new file:   book/5-sentenciasselectivasocondicionales.pdf
+        new file:   code/dos.cpp
+        new file:   code/dos.exe
+        new file:   code/uno.cpp
+        new file:   code/uno.exe
+        new file:   informe/INFORME GIT.docx
+        new file:   link/texto1.txt
+
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git commit
+[master (root-commit) b894313] este es mi primer deber de progra
+ 8 files changed, 18 insertions(+)
+ create mode 100644 book/1-introduccion.pdf
+ create mode 100644 book/5-sentenciasselectivasocondicionales.pdf
+ create mode 100644 code/dos.cpp
+ create mode 100644 code/dos.exe
+ create mode 100644 code/uno.cpp
+ create mode 100644 code/uno.exe
+ create mode 100644 informe/INFORME GIT.docx
+ create mode 100644 link/texto1.txt
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ gitstatus
+bash: gitstatus: command not found
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git log
+commit b894313c7bdec296a05db86ea7dd52d5e4d735db (HEAD -> master)
+Author: jostincito <jjmontenegro1@espe.edu.ec>
+Date:   Thu Oct 11 21:58:19 2018 -0500
+
+    este es mi primer deber de progra
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git branch ricardo
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (master)
+$ git checkout ricardo
+Switched to branch 'ricardo'
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git log
+commit b894313c7bdec296a05db86ea7dd52d5e4d735db (HEAD -> ricardo, master)
+Author: jostincito <jjmontenegro1@espe.edu.ec>
+Date:   Thu Oct 11 21:58:19 2018 -0500
+
+    este es mi primer deber de progra
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git remoto agregar origen https://github.com/Ricardo59/usuario-1.git
+git: 'remoto' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git origin
+git: 'origin' is not a git command. See 'git --help'.
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git remoto agregar origen https://github.com/Ricardo59/usuario-1.git
+git: 'remoto' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git status
+On branch ricardo
+nothing to commit, working tree clean
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git push -u maestro de origen
+error: src refspec de does not match any.
+error: src refspec origen does not match any.
+error: failed to push some refs to 'maestro'
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git bash
+git: 'bash' is not a git command. See 'git --help'.
+
+The most similar command is
+        stash
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ echo "# usuario-1" >> README.md
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git init
+Reinitialized existing Git repository in C:/Users/HP/Desktop/ususario1/.git/
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git remoto agregar origen https://github.com/Ricardo59/usuario-1.git
+git: 'remoto' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git commit -m "primer commit"
+[ricardo 3eaac4c] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git push -u maestro de origen
+error: src refspec de does not match any.
+error: src refspec origen does not match any.
+error: failed to push some refs to 'maestro'
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git remoto agregar origen https://github.com/Ricardo59/usuario-1.git
+git: 'remoto' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+HP@DESKTOP-C3MM5RA MINGW64 ~/Desktop/ususario1 (ricardo)
+$
